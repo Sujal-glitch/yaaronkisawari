@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Yaaron Ki Sawari Community</title>
+  <meta name="description" content="Yaaron Ki Sawari Community — Watch real guest stories, share yours and join the Wall of Fame." />
+  <style>
+    :root{
+      --accent1:#ff7e00;
+      --accent2:#ffcc33;
+      --bg:#fffaf3;
+      --muted:#6b7280;
+      --card:#ffffff;
+      --glass: rgba(255,255,255,0.8);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Poppins',sans-serif;background:var(--bg);color:#111}
+    .wrap{max-width:980px;margin:0 auto;padding:18px}
+    /* Header */
+    .site-header{display:flex;align-items:center;gap:14px;padding:18px;border-radius:12px;background:linear-gradient(135deg,var(--accent1),var(--accent2));color:#041018;margin:18px 0}
+    .brand-left{display:flex;align-items:center;gap:12px}
+    .brand-left img{width:56px;height:56px;object-fit:cover;border-radius:10px;border:2px solid rgba(0,0,0,0.06)}
+    .site-title{font-size:20px;margin:0;font-weight:700;letter-spacing:0.2px}
+    .site-sub{font-size:13px;margin:0;color:#041018;opacity:0.95}
+    .tagline{margin-left:auto;text-align:right;font-size:13px;color:#041018;opacity:0.95}
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 320px;gap:18px;align-items:start;margin-bottom:18px}
+    .card{background:var(--card);border-radius:14px;padding:14px;box-shadow:0 6px 24px rgba(4,8,15,0.06)}
+    .featured h2{margin:6px 0 10px;color:var(--accent1);font-size:18px}
+    video{width:100%;border-radius:10px;display:block;background:#000}
+    .desc{color:var(--muted);font-size:14px;margin:10px 0 14px}
+    .cta-row{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{
+      display:inline-flex;align-items:center;gap:8px;
+      background:linear-gradient(90deg,var(--accent1),var(--accent2));
+      color:#041018;padding:12px 16px;border-radius:999px;text-decoration:none;font-weight:700;
+      box-shadow:0 6px 18px rgba(255,140,30,0.12);
+    }
+    .btn.ghost{background:transparent;border:1px solid rgba(4,8,15,0.06);color:#111}
+    .small-muted{font-size:13px;color:var(--muted)}
+    /* Right column */
+    .meta-box h4{margin:0 0 6px;color:#ff7e00}
+    .stats{display:flex;gap:8px;margin-top:8px}
+    .stat{background:linear-gradient(180deg,rgba(255,255,255,0.9),rgba(255,255,255,0.85));padding:8px 10px;border-radius:10px;text-align:center;min-width:72px}
+    .stat strong{display:block;font-size:16px}
+    /* Gallery */
+    .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:14px}
+    .tile{border-radius:10px;overflow:hidden;background:linear-gradient(180deg,#fff,#fff);cursor:pointer;border:1px solid rgba(2,6,23,0.04)}
+    .tile video{height:150px;object-fit:cover}
+    .tile .meta{padding:8px;text-align:left}
+    .tile h5{margin:0;font-size:14px}
+    .tile p{margin:6px 0 0;font-size:13px;color:var(--muted)}
+    /* Top guest */
+    .top-guest{display:flex;gap:12px;align-items:center;padding:12px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.95),rgba(255,255,255,0.9))}
+    .tg-badge{background:linear-gradient(90deg,var(--accent1),var(--accent2));padding:8px 12px;border-radius:999px;font-weight:800;color:#041018}
+    .tg-desc{font-size:14px;color:#111}
+    /* Footer */
+    footer{margin:30px 0 10px;text-align:center;color:var(--muted);font-size:14px}
+    a.inline{color:var(--accent1);text-decoration:none;font-weight:700}
+    /* Responsive */
+    @media(max-width:880px){
+      .hero{grid-template-columns:1fr;gap:12px}
+      .gallery{grid-template-columns:1fr 1fr}
+      .brand-left img{width:52px;height:52px}
+    }
+    @media(max-width:520px){
+      .gallery{grid-template-columns:1fr}
+      .brand-left img{width:46px;height:46px}
+      .site-title{font-size:18px}
+      .site-sub{font-size:12px}
+      .tagline{display:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <!-- Header -->
+    <header class="site-header">
+      <div class="brand-left">
+        <img src="logo.png" alt="Yaaron Ki Sawari Logo">
+        <div>
+          <div class="site-title">Yaaron Ki Sawari Community</div>
+          <div class="site-sub">Your Ultimate Travel Buddy · Travel Brand for All</div>
+        </div>
+      </div>
+      <div class="tagline">Watch • Share • Shine ✨</div>
+    </header>
+
+    <!-- Hero -->
+    <div class="hero">
+      <div>
+        <div class="card featured">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <div style="font-size:13px;color:var(--muted)">✨ This month’s top travel story!</div>
+              <h2 style="margin:6px 0 0">Sunset, Laughter & The Open Road</h2>
+            </div>
+            <div style="text-align:right">
+              <div class="small-muted">Community • <strong>1.2K+</strong></div>
+              <div class="small-muted">Videos <strong>250</strong></div>
+            </div>
+          </div>
+
+          <div style="margin-top:12px">
+            <video controls poster="thumbnail.jpg">
+              <source src="Alltogether.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <p class="desc">Every journey is a story. Be proud — submit a 30–60s clip and get a chance to be featured on our Wall of Fame.</p>
+            <div class="cta-row">
+              <a class="btn" href="https://wa.me/919593753131?text=Hi%20Yaaron%20Ki%20Sawari%20team!%20I%20want%20to%20submit%20my%20video">Share My Travel Story 🎬</a>
+              <a class="btn ghost" href="https://wa.me/919593753131?text=Hi%20Yaaron%20Ki%20Sawari!%20I%20want%20to%20join%20the%20Wall%20of%20Fame">Join the Wall of Fame 🌟</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery -->
+        <div class="card" style="margin-top:14px">
+          <h3 style="margin:6px 0 10px;color:var(--accent1)">Community Clips</h3>
+          <div class="gallery">
+            <div class="tile">
+              <video controls>
+                <source src="hindi.mp4" type="video/mp4">
+              </video>
+              <div class="meta">
+                <h5>Mountains & Chai</h5>
+                <p>Ritu — 28s • Hindi</p>
+              </div>
+            </div>
+
+            <div class="tile">
+              <video controls>
+                <source src="english.mp4" type="video/mp4">
+              </video>
+              <div class="meta">
+                <h5>Roadtrip Laughter</h5>
+                <p>Kabir — 45s • English</p>
+              </div>
+            </div>
+          </div>
+
+          <p style="margin-top:12px;color:var(--muted)">Want your clip here? Tap “Share My Travel Story” — 30–60 seconds is perfect. By submitting, you allow Yaaron Ki Sawari Holidays to feature the clip across our site & social channels.</p>
+        </div>
+      </div>
+
+      <!-- Right column -->
+      <aside>
+        <div class="card meta-box">
+          <h4>Top Guest of the Month</h4>
+          <div class="top-guest" style="margin-top:8px">
+            <div class="tg-badge">#1</div>
+            <div class="tg-desc">
+              <strong>Rahul & Friends</strong><br>
+              <small class="small-muted">Himachal Diaries • Featured story</small>
+            </div>
+          </div>
+
+          <div style="margin-top:12px">
+            <div style="display:flex;gap:10px;align-items:center">
+              <div style="flex:1">
+                <div class="small-muted">Why join?</div>
+                <ul style="padding-left:18px;margin:8px 0;color:var(--muted)">
+                  <li>Be featured on our social channels</li>
+                  <li>Member-only early offers</li>
+                  <li>Connect with fellow travellers</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:8px" class="stats">
+            <div class="stat"><strong>1200+</strong><small style="display:block;color:var(--muted)">Members</small></div>
+            <div class="stat"><strong>98%</strong><small style="display:block;color:var(--muted)">Satisfaction</small></div>
+            <div class="stat"><strong>250</strong><small style="display:block;color:var(--muted)">Videos</small></div>
+          </div>
+
+          <div style="margin-top:12px;display:flex;gap:8px;flex-direction:column">
+            <a class="btn" href="https://wa.me/919593753131?text=Hi%20Yaaron%20Ki%20Sawari%20team!%20I%20want%20to%20submit%20my%20video">Submit via WhatsApp</a>
+            <a class="btn ghost" href="mailto:yarokisawari@gmail.com">Or Email: yarokisawari@gmail.com</a>
+            <a class="btn ghost" href="https://www.instagram.com/yaronkisawari?igsh=MXA3djdrZG5nMGpmcQ==" target="_blank">Follow on Instagram</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      © <strong>Yaaron Ki Sawari Holidays</strong> — Join our community and share your travel story. <br>
+      <small style="color:var(--muted)">By submitting a clip you agree to let Yaaron Ki Sawari feature it on our website & social channels.</small>
+    </footer>
+
+  </div>
+</body>
+</html>
